@@ -4,11 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>hw11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
     <link rel="stylesheet" href="/goit-js-hw-11/assets/index-10c40100.css">
   </head>
   <body>
- 
+    <form class="img-search-form">
+      <input
+        type="search"
+        name="query"
+        class="img-search-input"
+        placeholder="Search images..."
+      />
+      <button class="img-search-btn" type="submit">Search</button>
+    </form>
+    <div class="gallery-wrapper">
+      <span class="loader hidden"></span>
+      <ul class="gallery"></ul>
+    </div>
+    
   </body>
 </html>
